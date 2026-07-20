@@ -1,0 +1,86 @@
+CREATIVE CONNECTIONS — LAUNCH GUIDE
+Domain: ccstreamteam.com
+Host: GitHub Pages
+Registrar/DNS: WordPress.com
+
+PART 1 — TEST THE WEBSITE LOCALLY
+1. Extract the ZIP file.
+2. Double-click index.html.
+3. Browse the pages and confirm the design opens.
+
+PART 2 — EDIT THE PLACEHOLDERS
+1. Open assets/js/site-data.js in Notepad or Visual Studio Code.
+2. Replace every REPLACE-ME value.
+3. Update creator names, schedules, events, email, and social links.
+4. Save the file.
+
+PART 3 — CREATE THE GITHUB REPOSITORY
+1. Sign in at github.com.
+2. Click the + button and choose New repository.
+3. Repository name: creative-connections-website
+4. Choose Public.
+5. Do not add a README, .gitignore, or license.
+6. Click Create repository.
+
+PART 4 — UPLOAD THE WEBSITE
+1. On the empty repository page, click “uploading an existing file.”
+2. Open the extracted website folder.
+3. Select ALL files and folders inside it—not the outer folder itself.
+4. Drag them into GitHub.
+5. Confirm index.html and CNAME appear at the repository root.
+6. Enter commit message: Launch Creative Connections website
+7. Click Commit changes.
+
+PART 5 — ENABLE GITHUB PAGES
+1. Open the repository Settings tab.
+2. Select Pages in the left sidebar.
+3. Under Build and deployment, set Source to Deploy from a branch.
+4. Branch: main
+5. Folder: / (root)
+6. Click Save.
+7. GitHub will create a temporary URL such as:
+   https://YOUR-USERNAME.github.io/creative-connections-website/
+
+PART 6 — CONNECT CCSTREAMTEAM.COM
+1. In GitHub repository Settings → Pages, find Custom domain.
+2. Enter: ccstreamteam.com
+3. Click Save.
+
+PART 7 — CHANGE DNS AT WORDPRESS.COM
+1. Sign in to WordPress.com.
+2. Open Upgrades → Domains.
+3. Click ccstreamteam.com.
+4. Open DNS records and click Manage.
+5. Remove or edit old root A records that point the website to WordPress.com.
+6. Add these four A records for the root domain:
+
+   Type: A    Name/Host: @    Value: 185.199.108.153
+   Type: A    Name/Host: @    Value: 185.199.109.153
+   Type: A    Name/Host: @    Value: 185.199.110.153
+   Type: A    Name/Host: @    Value: 185.199.111.153
+
+7. Remove or edit the old www CNAME used by the WordPress.com website.
+8. Add this CNAME:
+
+   Type: CNAME
+   Name/Host: www
+   Value: YOUR-GITHUB-USERNAME.github.io
+
+9. Keep MX, TXT, DKIM, SPF, and other email records unchanged.
+10. Save the DNS changes.
+
+PART 8 — FINISH HTTPS
+1. Return to GitHub Settings → Pages.
+2. Wait until the custom-domain DNS check succeeds.
+3. Enable Enforce HTTPS when the checkbox becomes available.
+4. Test:
+   https://ccstreamteam.com
+   https://www.ccstreamteam.com
+
+DNS changes may appear quickly but can take up to 72 hours.
+
+IMPORTANT
+- Keep paying WordPress.com for the domain registration.
+- You do not need a WordPress.com website plan for the GitHub-hosted website.
+- Do not change nameservers.
+- Do not delete email-related DNS records.
