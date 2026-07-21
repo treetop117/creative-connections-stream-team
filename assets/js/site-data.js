@@ -42,12 +42,12 @@ window.CC_SITE_DATA = {
       "twitch": "https://twitch.tv/BataXp"
     },
     {
-      "name": "Creator Bravo",
-      "initials": "CB",
+      "name": "Conivor",
+      "initials": "CO",
       "role": "Creator",
       "focus": "FPS \u2022 Competitive",
       "bio": "Competitive player bringing high-energy streams, team play, and community challenges.",
-      "twitch": "https://twitch.tv/REPLACE-ME"
+      "twitch": "https://twitch.tv/Conivor"
     },
     {
       "name": "Creator Charlie",
