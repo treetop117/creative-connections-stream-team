@@ -34,12 +34,12 @@ window.CC_SITE_DATA = {
   ],
   "creators": [
     {
-      "name": "Creator Alpha",
-      "initials": "CA",
+      "name": "BataXp",
+      "initials": "BX",
       "role": "Founder",
       "focus": "Variety \u2022 Community",
       "bio": "Community-first creator focused on collaborative events and positive live experiences.",
-      "twitch": "https://twitch.tv/REPLACE-ME"
+      "twitch": "https://twitch.tv/BataXp"
     },
     {
       "name": "Creator Bravo",
